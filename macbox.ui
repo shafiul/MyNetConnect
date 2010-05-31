@@ -6,31 +6,31 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>379</width>
-    <height>168</height>
+    <width>404</width>
+    <height>185</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Enter MAC</string>
+   <string>Enter new value</string>
   </property>
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>20</y>
-     <width>331</width>
-     <height>131</height>
+     <x>10</x>
+     <y>10</y>
+     <width>381</width>
+     <height>161</height>
     </rect>
    </property>
    <property name="title">
-    <string>Enter New MAC Address</string>
+    <string>DNS Address Settings</string>
    </property>
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>150</x>
       <y>40</y>
-      <width>301</width>
+      <width>161</width>
       <height>21</height>
      </rect>
     </property>
@@ -38,14 +38,50 @@
    <widget class="QCommandLinkButton" name="commandLinkButton">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>80</y>
+      <x>260</x>
+      <y>120</y>
       <width>111</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>Change MAC</string>
+     <string>Save</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>101</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;span style = 'color: #0000FF;'&gt;Nameserver 1:&lt;/span&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;span style = 'color: #0000FF;'&gt;Nameserver 2:&lt;/span&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>70</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
     </property>
    </widget>
   </widget>

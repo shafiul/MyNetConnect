@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'mainwindow.ui'
 **
-** Created: Fri May 28 14:54:12 2010
+** Created: Mon May 31 17:15:25 2010
 **      by: Qt User Interface Compiler version 4.5.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -32,6 +32,7 @@ class Ui_MainWindow
 {
 public:
     QAction *actionChange_MAC_Address;
+    QAction *actionDial_up;
     QWidget *centralWidget;
     QComboBox *comboBox;
     QLabel *label;
@@ -64,6 +65,8 @@ public:
         MainWindow->resize(514, 335);
         actionChange_MAC_Address = new QAction(MainWindow);
         actionChange_MAC_Address->setObjectName(QString::fromUtf8("actionChange_MAC_Address"));
+        actionDial_up = new QAction(MainWindow);
+        actionDial_up->setObjectName(QString::fromUtf8("actionDial_up"));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         comboBox = new QComboBox(centralWidget);
@@ -155,7 +158,7 @@ public:
         label_13->setAlignment(Qt::AlignCenter);
         commandLinkButton = new QCommandLinkButton(centralWidget);
         commandLinkButton->setObjectName(QString::fromUtf8("commandLinkButton"));
-        commandLinkButton->setGeometry(QRect(370, 10, 121, 41));
+        commandLinkButton->setGeometry(QRect(360, 10, 131, 41));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
@@ -172,6 +175,7 @@ public:
 
         menuBar->addAction(menuAdvanced->menuAction());
         menuAdvanced->addAction(actionChange_MAC_Address);
+        menuAdvanced->addAction(actionDial_up);
 
         retranslateUi(MainWindow);
 
@@ -182,12 +186,32 @@ public:
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "My Network Connector", 0, QApplication::UnicodeUTF8));
         actionChange_MAC_Address->setText(QApplication::translate("MainWindow", "Change DNS Addresses", 0, QApplication::UnicodeUTF8));
+#ifndef QT_NO_STATUSTIP
+        actionChange_MAC_Address->setStatusTip(QApplication::translate("MainWindow", "Click here to edit Nameserver addresses", 0, QApplication::UnicodeUTF8));
+#endif // QT_NO_STATUSTIP
+        actionDial_up->setText(QApplication::translate("MainWindow", "Dial up...", 0, QApplication::UnicodeUTF8));
         label->setText(QApplication::translate("MainWindow", "Device:", 0, QApplication::UnicodeUTF8));
-        label_2->setText(QApplication::translate("MainWindow", "IP Address:", 0, QApplication::UnicodeUTF8));
-        label_3->setText(QApplication::translate("MainWindow", "Subnet Mask:", 0, QApplication::UnicodeUTF8));
-        label_4->setText(QApplication::translate("MainWindow", "Default Gateway:", 0, QApplication::UnicodeUTF8));
-        label_5->setText(QApplication::translate("MainWindow", "Enter New Value", 0, QApplication::UnicodeUTF8));
-        label_6->setText(QApplication::translate("MainWindow", "Current Value", 0, QApplication::UnicodeUTF8));
+        label_2->setText(QApplication::translate("MainWindow", "<span style = 'color: #0000FF;'>IP Address:</span>", 0, QApplication::UnicodeUTF8));
+        label_3->setText(QApplication::translate("MainWindow", "<span style = 'color: #0000FF;'>Subnet Mask:</span>", 0, QApplication::UnicodeUTF8));
+        label_4->setText(QApplication::translate("MainWindow", "<span style = 'color: #0000FF;'>Default Gateway:</span>", 0, QApplication::UnicodeUTF8));
+        label_5->setText(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'\\u09ae\\u09bf\\u09a4\\u09cd\\u09b0'; font-size:10pt; font-weight:400; font-style:italic;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'u09aeu09bfu09a4u09cdu09b0'; color: #0000FF;\">Enter New Value</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+#ifndef QT_NO_TOOLTIP
+        label_6->setToolTip(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">This is the value stored in Ubuntu's built-in NetworkManger</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">You can always ignore this value!</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+#endif // QT_NO_TOOLTIP
+        label_6->setText(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'\\u09ae\\u09bf\\u09a4\\u09cd\\u09b0'; font-size:10pt; font-weight:400; font-style:italic;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#0000ff;\">System Says</span></p></body></html>", 0, QApplication::UnicodeUTF8));
         label_7->setText(QApplication::translate("MainWindow", "-/-", 0, QApplication::UnicodeUTF8));
         label_8->setText(QApplication::translate("MainWindow", "-/-", 0, QApplication::UnicodeUTF8));
         label_9->setText(QApplication::translate("MainWindow", "-/-", 0, QApplication::UnicodeUTF8));
@@ -195,8 +219,8 @@ public:
         label_11->setText(QApplication::translate("MainWindow", "Current Value:", 0, QApplication::UnicodeUTF8));
         label_12->setText(QApplication::translate("MainWindow", "New Value:", 0, QApplication::UnicodeUTF8));
         label_13->setText(QApplication::translate("MainWindow", "-/-", 0, QApplication::UnicodeUTF8));
-        commandLinkButton->setText(QApplication::translate("MainWindow", "Save...", 0, QApplication::UnicodeUTF8));
-        menuAdvanced->setTitle(QApplication::translate("MainWindow", "Advanced", 0, QApplication::UnicodeUTF8));
+        commandLinkButton->setText(QApplication::translate("MainWindow", "Apply Changes!", 0, QApplication::UnicodeUTF8));
+        menuAdvanced->setTitle(QApplication::translate("MainWindow", "Options", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

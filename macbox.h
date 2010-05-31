@@ -2,6 +2,7 @@
 #define MACBOX_H
 
 #include <QDialog>
+#include <QSettings>
 
 namespace Ui {
     class macbox;

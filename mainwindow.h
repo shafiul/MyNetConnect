@@ -7,6 +7,9 @@
 #include <QList>
 #include <QNetworkInterface>
 #include <QNetworkAddressEntry>
+#include <QSettings>
+#include <QCoreApplication>
+#include "ippack.h"
 
 namespace Ui {
     class MainWindow;
@@ -18,10 +21,16 @@ public:
     // my Data vars
     QString currentAdapter;
     int currentAdapterIndex;
-    QList<QNetworkInterface> IpList;
+    QList<QNetworkInterface> interfaceList;
+    QStringList myAdapterList;
+    QList<ippack> ipList;
     // predefined funcs
     MainWindow(QWidget *parent = 0);
     ~MainWindow();
+    void ipPackReader();
+    void ipPackWriter();
+    void adapterListMaker();
+    void adapterUserSettingsUpdater();
 
 protected:
     void changeEvent(QEvent *e);

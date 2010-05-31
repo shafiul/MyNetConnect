@@ -6,8 +6,10 @@ TARGET = MyNetConnect
 TEMPLATE = app
 SOURCES += main.cpp \
     mainwindow.cpp \
-    macbox.cpp
+    macbox.cpp \
+    ippack.cpp
 HEADERS += mainwindow.h \
-    macbox.h
+    macbox.h \
+    ippack.h
 FORMS += mainwindow.ui \
     macbox.ui

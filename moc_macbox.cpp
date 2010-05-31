@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'macbox.h'
 **
-** Created: Thu May 27 15:36:25 2010
+** Created: Mon May 31 15:53:05 2010
 **      by: The Qt Meta Object Compiler version 61 (Qt 4.5.3)
 **
 ** WARNING! All changes made in this file will be lost!
